@@ -11,7 +11,7 @@ namespace Threads
     {
         static void Main()
         {
-            Thread threadPing = new Thread(() => ExecutarMensagens("PING", 10, 180));
+            Thread threadPing = new Thread(() => ExecutarMensagens("PING", 10, 200));
             Thread threadPong = new Thread(() => ExecutarMensagens("PONG", 10, 200));
 
             Console.WriteLine("Iniciando...");
