@@ -16,8 +16,9 @@ namespace Threads
 
             Console.WriteLine("Iniciando...");
             threadPing.Start();
+            threadPong.Start(); 
 
-            threadPong.Start();    
+            threadPing.Join(); threadPong.Join();
         }
 
         static void ExecutarMensagens(string texto, int vezes, int delay)
